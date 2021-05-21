@@ -1,0 +1,266 @@
+body{
+    background-color: black;
+    color: white;   
+    font-family:'Open Sans', sans-serif;
+}
+
+.heading-container{
+    position: relative;
+    margin: 20px 200px;
+    letter-spacing: 0.5px;
+}
+
+.first-heading{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.par-heading{
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.par-li-heading{
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.sec-par-heading{
+    cursor: pointer;
+    font-size: 35px;
+    background-color: black;
+    color: white;
+    border-style: none;
+}
+
+.fa-plus-circle{
+    color: #3d84b8;
+    
+}
+
+.invisible-par{
+    font-size: 20px;
+}
+
+.popup-container{
+   
+    border: 1px solid red;
+    width: 400px;
+    height: 200px;
+    border-radius: 12px;
+    left: 450px;
+    bottom: 100px;
+    position: relative;
+    box-shadow: 7px 7px 9px lightgrey;
+    background-color: whitesmoke;
+    visibility: hidden;
+    /* transition: 0.5s;
+    opacity: 0; */
+}
+
+.add-item-body{
+    text-align: center;
+
+}
+
+.add{
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(226, 34, 21);
+}
+
+.input-box{
+    border: 1px solid rgb(226, 34, 21);
+    height: 40px;
+    width: 300px;
+    margin-bottom: 15px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 10px gray;
+}
+
+::placeholder{
+    text-align: center;
+    font-size: 15px;
+}
+
+.button-style{
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-button{
+    margin-left: 90px;
+}
+
+.exit-button{
+
+    margin-right: 100px;
+    margin-left: 20px;
+}
+
+.add-button-styling{
+    height: 50px;
+    width: 120px;
+    border-radius: 25px;
+    background-color: rgb(226, 34, 21);
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    border-width: 0;
+    cursor: pointer;
+}
+
+.exit-button-styling{
+    height: 50px;
+    width: 120px;
+    border-radius: 25px;
+    background-color: rgb(226, 34, 21);
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    border-width: 0;
+    cursor: pointer;
+}   
+
+/* .heading-container#add-blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#pop-up.active{
+    top: 30%;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+} */
+
+.flex-row-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 80%; */
+}
+.card-styling{
+    border: 1px solid red;
+    min-width: 250px;
+    min-height: 250px;
+    background-color: white;
+    box-shadow: 2px 2px 2px grey;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 1rem;
+    color: black;
+    /* margin: 10px;
+    padding-bottom: 0px; */
+    /* display: flex; */
+    /* flex-direction: wrap; */
+    /* justify-content: space-between; */
+}
+.paragraph{
+    color: black;
+}
+
+.footer{
+    position: absolute;
+    margin-top: 10px;
+    
+}
+
+.btn-completed{
+    position: relative;
+    top: 100px;
+    left: 160px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border-width: 0;
+    background-color: white;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+.fa-trash-alt{
+    color: red;
+   
+}
+
+.task-add-item{
+    width: 400px;
+    border:1px solid red;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 4px 4px 2px 0px grey;
+    position: fixed;
+    top: 250px;
+    left: 500px;
+    z-index: 2;
+    background-color: whitesmoke;
+    visibility: hidden;
+    visibility: hidden;
+}
+.new-list{
+    text-align: center;
+    padding: 20px;
+}
+#input-taskItem{
+    height: 32px;
+    width: 350px;
+    margin-left: 30px;
+    border: 1px solid red;
+    box-shadow: 4px 4px 2px grey;
+    border-radius: 5px;
+    display: block;
+}
+
+.popupBtn{
+    height: 35px;
+    width: 100px;
+    border: 0px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.card-description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+    align-content: space-between;
+    align-items: flex-start;
+}
+.subTask{
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: black;
+}
+
+.complete-task{
+    height: 20px;
+    width: 100px;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    padding: 4px;
+}

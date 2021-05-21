@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+
+
+    <script src="https://kit.fontawesome.com/1e5a854334.js" crossorigin="anonymous"></script>
+
+    <title>Todo App</title>
+</head>
+<body>
+    <!-- -------------------Main Page--------------------------- -->
+    <div class="heading-container" id="add-blur">
+        <div class="first-heading">
+            <p class="par-heading">
+                Tasks 
+                <span class="par-li-heading">List</span>
+            </p>
+            <button class="sec-par-heading">
+                <i class="fas fa-plus-circle"></i>
+                <span class="add-item">Add Item</span>    
+            </button>
+        </div>
+
+        <div class="flex-row-container">
+            
+        </div>
+
+        <p class="invisible-par" id="notext" style="display: block;">No Items in the Todo List</p>
+    </div>
+
+<!-- Back Button -->
+    <!-- <div class="fixed-task">
+        <div class="back-heading">
+
+            <div class="back-btn">
+                <i class="fas fa-chevron-left">
+                    <span class="back">Back</span>
+                </i>
+            </div>
+
+            <div class="heading">
+
+            </div>
+
+            <div class="addSign">
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+        <div class="one-card">
+
+        </div>
+
+    </div> -->
+    <!-- -------------------Pop up--------------------------- -->
+
+    <div class="popup-container" id="pop-up">
+        <div class="add-item-body">
+            <p class="add">Add New List</p>
+            <input class="input-box" id="addToDoHeading" type="text" placeholder="ENTER THE TITLE OF TASK">
+         </div>
+        <div class="button-style">
+
+            <div class="add-button">
+                <button type="button" class="add-button-styling" >Add</button>
+            </div>
+
+            <div class="exit-button">
+                <button type="button" class="exit-button-styling">Close</button>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <div class="task-add-item">
+        <div class="new-list">Add New Task Item</div>
+        <input type="text" id="input-taskItem">
+        <div class="popupBtn" id="addThisCrad" >Add</div>
+        <div class="popupBtn" id="close-this-card" onclick="closepopu()">Close</div>
+    </div>
+
+
+</body>
+<script src="./JS/script2.js"></script>
+</html>
